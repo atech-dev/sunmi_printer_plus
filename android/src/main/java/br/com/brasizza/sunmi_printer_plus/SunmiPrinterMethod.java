@@ -254,6 +254,22 @@ public class SunmiPrinterMethod {
         }
     }
 
+    public void labelLocate() {
+        try {
+            _woyouService.labelLocate();
+        } catch (RemoteException e) {
+
+        }
+    }
+
+    public void labelOutput() {
+        try {
+            _woyouService.labelOutput();
+        } catch (RemoteException e) {
+
+        }
+    }
+
     public Boolean openDrawer() {
         try {
             _woyouService.openDrawer(this._callback());

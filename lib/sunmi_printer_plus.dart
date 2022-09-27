@@ -393,6 +393,16 @@ class SunmiPrinter {
     await _channel.invokeMethod("EXIT_PRINTER_BUFFER", arguments);
   }
 
+  /// Enter into the label printing mode
+  static Future<void> startLabelPrint() async {
+    await _channel.invokeMethod("LABEL_LOCATE");
+  }
+
+  /// Exit into the label printing mode
+  static Future<void> exitLabelPrint() async {
+    await _channel.invokeMethod("LABEL_OUTPUT");
+  }
+
   ///*setFontSize*
   ///
   ///This method will change the fontsize , between extra small and extra large.

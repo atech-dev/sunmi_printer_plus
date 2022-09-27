@@ -217,6 +217,10 @@ interface IWoyouService
 	*/
 	int getPrinterMode();
 
+	void labelLocate();
+
+    void labelOutput();
+
 	/**
 	* 获取黑标模式打印机自动走纸距离
 	* 返回：检测到黑标后仍继续前进距离
